@@ -73,7 +73,7 @@ html, body {
         background-size: cover;
     */
 	
-	
+	background: url("images/bright_squares.png") repeat;
 }
 
 .center {
