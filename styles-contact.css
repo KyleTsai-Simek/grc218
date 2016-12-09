@@ -70,13 +70,17 @@ html, body {
     flex-direction: column;
     justify-content: center;
 }
-
+.blurb {
+    max-width:70%;
+    text-align: center;
+    margin: 20px auto;
+}
 .center {
     width: 700px;
     padding: 10px 0 0 0;
     background: #ffffff;
     text-align: center;
-    margin: 30px auto;
+    margin: 30px auto 50px auto;
     max-width: 90%;
     
     /* Vertically center align */
@@ -85,12 +89,34 @@ html, body {
     justify-content: center;
 }
 
-   
+img { 
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+#portrait {
+    height: 15-px;
+    width: 150px;
+    margin: 0px auto;
+}
+
 #logo {
     height: 100px;
     position: fixed; 
     left: 0px;
     bottom: 0px;
+}
+
+#edison {
+    height: 50px;
+    margin: 25px 0 30px 0;
+}
+
+.signature {
+    display: block;
+    text-align: center;
+    margin: 0;
 }
 
 .logo-underline {
@@ -124,7 +150,7 @@ h1 {
     font-size: 1.2em;
     margin: 20px;
     color: #000;
-    border: 1px solid #aaa;
+    border: 1px solid #666;
     border-width: 1px 0;
     padding: 10px;
 }
@@ -136,7 +162,7 @@ h2 {
     line-height: 1.4;
     color: #000;
     padding: 0;
-    margin: 25px 0;
+    margin: 10px 0 0 0;
 }
 
 h2-bold {
@@ -172,7 +198,7 @@ nav li {
 }
 nav a {
     display: inline-block;
-    padding:10px 40px;
+    padding:10px 20px;
 }
 a {
     color:#444;
@@ -193,12 +219,23 @@ vvv MEDIA QUERY BEGINS HERE vvv
 @media (max-width:768px) {
     
     .center-tml {
-        margin: 30px auto 0px auto;
+        margin: 25px auto 0px auto;
+        max-width: 92%;
+    }
+    .blurb {
+        width:380px;
+        max-width: 95%;
+        text-align: center;
+        margin: 5px auto 10px auto;
     }
     .center {
-        max-width: 90%;
-        bottom: 50px;
+        max-width: 92%;
         left: 16px;
+        margin: 15px auto 20px auto;
+    }
+    #portrait {
+        width: 100px;
+        height: 100px;
     }
     #logo {
         height: 50px;
@@ -209,9 +246,11 @@ vvv MEDIA QUERY BEGINS HERE vvv
     .top-line {
         height: 10px;
     }
-    img { 
-        max-width:100%;
+    #edison {
+        height: 50px;
+        margin: 10px 0 25px 0;
     }
+    
     h1 {
         font-family: 'aaux-next', 'sans-serif';
         font-style: normal;
@@ -230,15 +269,19 @@ vvv MEDIA QUERY BEGINS HERE vvv
         margin: 10px auto 10px auto;
     }
     nav {
-        max-width:90%;
+        max-width:95%;
         margin-bottom: 10px;
+        font-size: .75em;
+        margin: 10px auto 0 auto;
     }
     nav li {
-        display: block; 
+        display: inline-block; 
+        margin: 0px;
     }
     nav a {
         display:inline-block;
-        padding: 10px;
+        padding: 8px;
+        text-align: center;
     }
 
 }
